@@ -32,7 +32,7 @@ body {
 }
 
 .student{
-    background-color: #018786;
+    background-color: white;
 }
 
 p{
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom:  0.25em solid; 
 }
 
-/**.doc-header {
+.doc-header {
     background-color: var(--secondary-a);
     color: var(--on-secondary);
 }
@@ -68,4 +68,4 @@ h1, h2, h3, h4, h5, h6 {
 .doc-footer {
     background-color: var(--secondary-a);
     color: var(--on-secondary);
-} **/
+}
