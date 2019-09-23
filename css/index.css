@@ -1,3 +1,71 @@
-body {
-    background-color: tomato;
+html {
+    /* --- CSS CUSTOM PROPERTIES --- */
+    --primary-a: #6200ee;
+    --primary-b: #3700b3;
+    --secondary-a: #03dac6;
+    --secondary-b: #018786;
+    --background: white;
+    --error: #b00020;
+
+    /*** Foreground Colors ***/
+    --on-primary: white;
+    --on-secondary: black;
+    --on-background: #222222;
+    --on-error: white;
+
+    /*** Font Sets ***/
+    --font-body: Helvetica, Arial, sans-serif;
+    --font-impact: georgia, serif;
 }
+
+body {
+    background-color: var(--background);
+    color: var(--on-background);
+
+    /* font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: var(--font-body);**/
+
+    font: normal normal 1em/1.4 var(--font-body);
+}
+
+.student{
+    background-color: #018786;
+}
+
+p{
+    margin: 1em 0;
+}
+
+/***.doc-main a {
+    background-color: var(--secondary-a);
+    color: var(--on-secondary);
+} **/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* h2{
+    text-transform: uppercase;
+} */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.underline {
+    border-bottom:  0.25em solid; 
+}
+
+/**.doc-header {
+    background-color: var(--secondary-a);
+    color: var(--on-secondary);
+}
+
+.doc-footer {
+    background-color: var(--secondary-a);
+    color: var(--on-secondary);
+} **/
