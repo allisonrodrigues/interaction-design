@@ -4,20 +4,10 @@ body{
     color: #333333;
 }
 
-hr {
-    color: #005293;
-    background-color: #005293;
-    border: none;
-}
-
 h2 {
     border-bottom: solid;
     border-color: #005293;
   }
-
-.title{
-    font-size: 20px;
-}
 
 /* HEADER */
 
@@ -187,14 +177,13 @@ h2 {
     padding: 15px 10px 0px 0px;
 }
 
-/* IMAGES */
-
-.descriptionpic{
-    width: 25%;
-    height: auto;
+hr {
+    color: #005293;
+    background-color: #005293;
+    border: none;
 }
 
-.careerspic{
-    width: 25%;
-    height: auto;
+.doc-footer{
+    font-family: Helvetica;
+    font-size: 12px;
 }
