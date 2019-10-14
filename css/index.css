@@ -1,189 +1,364 @@
 body{
     background-color: white;
     font-family: Helvetica, Arial, sans-serif;
-    color: #333333;
+    color: black;
+    margin: 0;
+    padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 h2 {
     border-bottom: solid;
-    border-color: #005293;
+    border-color: #000000;
   }
 
 /* HEADER */
-
-.item7 { grid-area: logo; }
-.item8 { 
-    grid-area: title; 
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Helvetica;
-    color: white;
-    padding-top: 52px;
+.header {
+  background: black;
+  padding: 0.5rem;
 }
 
-.grid-header {
-    display: grid;
-    grid-template-areas:
-      'logo title title title title title';
-    background-color: #005293;
-  }
-  
-  .grid-header > div {
-    background-color: #005293;
-    text-align: left;
-  }
-  
-  .logo{
-    width: 30vw;
-    height: auto;
-    padding: 20px 10px 0px 20px;
+.logo {
+  width: 15vw;
+  max-width: 100px;
+  height: auto;
 }
 
-.firstpic{
-    width: 97vw;
-    height: auto;
-    align-items: center;
+div.title {
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 601px) {
+  div.title {
+    font-size: 1.5rem;
+    padding-left: 33vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.title {
+    font-size: 1rem;
+    padding-left: 12vw;
+  }
+}
+
+.header .logo,
+ .header .title {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* NAVIGATION */
 
 .nav {
-    background-color: #005293;
-    overflow: hidden;
+  background-color: white;
+  overflow: hidden;
+  border-bottom: solid;
+  border-color: #000000;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 .nav a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: Helvetica;
-    font-size: 11px;
-    font-weight: bold;
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: bold;
+  padding-top: 20px;
+  margin: auto;
+  width: 10vw;
 }
 
 .nav a:hover {
-    background-color: white;
-    color: #005293;
+  background-color: gainsboro;
+  color: black;
+}
+
+.nav-icon {
+  width: 50px;
+}
+
+@media screen and (min-width: 601px) {
+  div.nav {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.nav {
+    font-size: 0.7rem;
+  }
 }
 
 /* STUDENT PROFILE */
 
 .student{
-    background-color: white;
-    font-size: 11px;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  div.student {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.student {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .item1 { grid-area: spic; }
 .item2 { grid-area: sname; }
-.item3 { grid-area: sdes;}
+.item3 { grid-area: sdes; }
 
 .grid-student {
-    display: grid;
-    grid-template-areas:
-      'spic sname sname sname sname sname'
-      'spic sdes sdes sdes sdes sdes';
-    background-color: white;
+  display: grid;
+  grid-template-areas:
+    'spic sname sname sname sname sname'
+    'spic sdes sdes sdes sdes sdes';
+  background-color: white;
+  align-content: center;
+}
+
+.student-text {
+  text-align: left;
+}
+
+@media screen and (min-width: 601px) {
+  div.student-text {
+    font-size: 1rem;
+    padding-left: 2%;
+    padding-right: 10%;
   }
-  
-  .grid-student > div {
-    background-color: white;
-    text-align: left;
-    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  div.student-text {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
   }
-  
-  .studentpic{
-    width: 40vw;
-    height: auto;
-    padding: 15px 10px 0px 0px;
+}
+
+.studentpic{
+  max-width: 10vw;
+  height: auto;
+  padding-top: 15px;
 }
 
 /* DESCRIPTION */
-.description{
-    background-color: white;
-    font-size: 11px;
+.description {
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 601px) {
+  div.description {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.des-text {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.des-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+  }
 }
 
 /* CAREERS */
 .careers{
-    background-color: white;
-    font-size: 11px;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  div.careers {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.careers {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  div.careers-text {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.careers-text {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+  }
 }
 
 .grid-careers {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 15px;
-    background-color: white;
-    padding: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px;
+  background-color: white;
+  padding: 15px;
+}
+
+.grid-careers > div {
+  background-color: white;
+  border: 1px;
+  text-align: center;
+  font-size: 2vw;
+}
+
+@media screen and (min-width: 601px) {
+  div.career-list {
+    font-size: 1rem;
+    font-weight: bold;
   }
-  
-  .grid-careers > div {
-    background-color: white;
-    border: 1px;
-    text-align: center;
-    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  div.career-list {
+    font-size: 0.7rem;
+    font-weight: bold;
   }
+}
 
 /* COURSES */
 .courses{
-    background-color: white;
-    font-size: 11px;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  div.courses {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.courses {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5rem;
+  }
 }
 
 .grid-courses {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
-    background-color: white;
-    padding: 10px;
-  }
-  
-  .grid-courses > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    text-align: left;
-    font-size: 10px;
-  }
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: white;
+  padding: 10px;
+}
+
+.grid-courses > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  text-align: left;
+  font-size: 1.80vw;
+}
 
 /* ALUMNI */
+
 .alumni{
-    background-color: white;
-    font-size: 11px;
+  background-color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 601px) {
+  div.alumni {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.alumni {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .item4 { grid-area: apic; }
 .item5 { grid-area: aname; }
-.item6 { grid-area: ades;}
+.item6 { grid-area: ades; }
 
 .grid-alumni {
-    display: grid;
-    grid-template-areas:
-      'apic aname aname aname aname aname'
-      'apic ades ades ades ades ades';
-    background-color: white;
-  }
-  
-  .grid-alumni > div {
-    background-color: white;
-    text-align: left;
-    font-size: 12px;
-  }
-  
-  .alumnipic{
-    width: 40vw;
-    height: auto;
-    padding: 15px 10px 0px 0px;
+  display: grid;
+  grid-template-areas:
+    'apic aname aname aname aname aname'
+    'apic ades ades ades ades ades';
+  background-color: white;
+  align-content: center;
 }
 
-hr {
-    color: #005293;
-    background-color: #005293;
-    border: none;
+.alumni-text {
+  text-align: left;
 }
 
-.doc-footer{
-    font-family: Helvetica;
-    font-size: 12px;
+@media screen and (min-width: 601px) {
+  div.alumni-text {
+    font-size: 1rem;
+    padding-left: 2%;
+    padding-right: 10%;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  div.alumni-text {
+    font-size: 0.8rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.alumnipic{
+  max-width: 10vw;
+  height: auto;
+  padding-top: 15px;
+}
+
